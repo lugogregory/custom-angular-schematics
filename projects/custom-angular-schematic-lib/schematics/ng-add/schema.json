@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "NgAdd",
+  "title": "Support ng add command",
+  "type": "object",
+  "properties": {}
+}

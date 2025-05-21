@@ -1,0 +1,8 @@
+.full-width-table {
+  width: 100%;
+}
+
+.mat-column-select, .mat-column-star {
+  width: 32px;
+}
+ 

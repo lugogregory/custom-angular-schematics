@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Add my library to the project.",
+      "factory": "./ng-add/index#ngAdd",
+      "schema": "./ng-add/schema.json"
+    },
+     "hello-word-service": {
+      "description": "Generate a service Hello Word to the project.",
+      "factory": "./hello-word-service/index#helloWordService",
+      "schema": "./hello-word-service/schema.json"
+    },
+    "template": {
+      "description": "Generate a template to the project.",
+      "factory": "./templates/index#templateGenerator",
+      "schema": "./templates/schema.json"
+    }
+  }
+}

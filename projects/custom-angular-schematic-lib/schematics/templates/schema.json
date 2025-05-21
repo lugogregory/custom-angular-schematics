@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "templates-generator",
+  "title": "Instala plantilla prediseñadas en nuestra aplicación",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Nombre del componente",
+      "type": "string",
+      "x-prompt": "Escribe el nombre del componente (mínimo 3 caracteres)"
+    },
+    "path": {
+      "description": "Ruta del componente",
+      "type": "string",
+      "format": "path",
+      "x-prompt": "El componente se creará por defecto en 'src/app/features', indique el path anidado (opcional)"
+    },
+    "type": {
+      "description": "Tipo de `plantilla`",
+      "type": "string",
+      "default": "table",
+      "enum": ["table", "form"],
+      "x-prompt": {
+        "message": "¿Qué tipo de plantilla quieres crear?",
+        "type": "list",
+        "items": [
+          {
+            "value": "table",
+            "label": "Tabla con selección y botón de acción"
+          },
+          {
+            "value": "form",
+            "label": "Formulario con validaciones"
+          }
+        ]
+      }
+    }
+  },
+  "required": ["name", "type"]
+}
